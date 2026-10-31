@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="my">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171717">
+  <meta name="description" content="မူကထအိမ် Digital Menu">
+  <title>မူကထအိမ် | Digital Menu</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="brand-mark" aria-hidden="true">မ</div>
+    <p class="eyebrow">MONYWA • HOT POT</p>
+    <h1>မူကထအိမ်</h1>
+    <p class="subtitle">သင့်စိတ်ကြိုက် မီနူးကို ရွေးချယ်ကြည့်ရှုပါ</p>
+    <div class="status-line"><span class="status-dot"></span><span id="statusText">မီနူးကို ဖွင့်နေပါတယ်…</span></div>
+  </header>
+
+  <main class="container">
+    <section class="controls" aria-label="မီနူးရှာဖွေရန်">
+      <label class="search-wrap">
+        <span aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" placeholder="ပစ္စည်းအမည်ဖြင့် ရှာရန်…" autocomplete="off">
+        <button id="clearSearch" class="clear-btn" type="button" aria-label="ရှာဖွေမှုဖျက်ရန်" hidden>×</button>
+      </label>
+      <div id="categoryFilters" class="category-filters" aria-label="အမျိုးအစားများ">
+        <button class="chip active" data-category="all" type="button">အားလုံး</button>
+      </div>
+    </section>
+
+    <section class="results-heading">
+      <h2 id="sectionTitle">မီနူးစာရင်း</h2>
+      <span id="itemCount" class="item-count">0 မျိုး</span>
+    </section>
+
+    <section id="menuGrid" class="menu-grid" aria-live="polite"></section>
+    <section id="emptyState" class="empty-state" hidden>
+      <div class="empty-icon">⌕</div>
+      <h3>ပစ္စည်း မတွေ့ပါ</h3>
+      <p>အခြားအမည်တစ်ခုဖြင့် ရှာကြည့်ပါ။</p>
+    </section>
+    <section id="errorState" class="notice" hidden>
+      <h3>မီနူးကို ယခုဖွင့်မရသေးပါ</h3>
+      <p id="errorMessage">Internet ချိတ်ဆက်မှုကို စစ်ဆေးပြီး ပြန်ဖွင့်ကြည့်ပါ။</p>
+      <button id="retryButton" class="primary-btn" type="button">ပြန်ကြိုးစားရန်</button>
+    </section>
+    <p class="order-note">မှာယူရန် ဆိုင်ဝန်ထမ်းကို ပြောပေးပါ။ ဈေးနှုန်းများကို ဆိုင်မှ အတည်ပြုနိုင်ပါသည်။</p>
+  </main>
+
+  <footer class="footer">
+    <strong>မူကထအိမ်</strong>
+    <span>Digital Menu</span>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
