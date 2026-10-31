@@ -2,7 +2,7 @@
   Mukahtaeain Digital Menu
   Paste the deployed Google Apps Script Web App URL into API_URL below.
 */
-const API_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+const API_URL = "https://script.google.com/macros/s/AKfycbyxjiVDYdRhWEGsKEgIIqP2X3JJ1pdWMsnc03Ng55XZ0_Ok6j7XJBpJSLbEVW2w6yW1/exec";
 
 const state = { items: [], category: "all", query: "" };
 const els = {
